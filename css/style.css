@@ -227,8 +227,11 @@ h6 {
   min-height: 3.875rem;
   gap: 0.625rem;
 }
+.header__logo {
+  transition: all 1s ease 0.3s;
+}
 .header__logo:hover {
-  transform: rotate(360deg);
+  transform: rotate(-60deg);
   transition: all 1s ease 0.3s;
 }
 .header__menu {
@@ -248,6 +251,7 @@ h6 {
 }
 .header__btn {
   white-space: nowrap;
+  transition: all 0.6s ease 0s;
 }
 .header__btn:hover {
   color: #fff;
@@ -305,6 +309,7 @@ h6 {
   color: #6B7280;
   font-weight: 500;
   line-height: 1.5555555556;
+  transition: all 0.3s ease 0s;
 }
 .menu__link:hover {
   color: #3730a3;
@@ -1076,7 +1081,6 @@ h6 {
 .footer__socials {
   display: flex;
   flex-wrap: wrap;
-  gap: 3.125rem;
   justify-content: center;
 }
 @supports (gap: clamp( 1.25rem , 0.5758426966rem  +  3.3707865169vw , 3.125rem )) {
@@ -1089,12 +1093,15 @@ h6 {
     gap: calc(1.25rem + 1.875 * (100vw - 20rem) / 55.625);
   }
 }
-.footer__link {
-  text-align: center;
+.footer__item {
   width: 2.1875rem;
   height: 2.1875rem;
-  font-size: 2.1875rem;
+  text-align: center;
+}
+.footer__link {
   color: #6B7280;
+  transition: all 0.3s ease 0s;
+  font-size: 2.1875rem;
 }
 .footer__link:hover {
   color: #3730a3;
