@@ -766,7 +766,7 @@ h6 {
     grid-column: auto;
   }
 }
-@media (min-width: 47.99875em) {
+@media (any-hover: hover) {
   .gallery-block__image:hover .gallery-block__info-card {
     display: block;
   }
@@ -777,10 +777,10 @@ h6 {
   object-fit: cover;
 }
 .gallery-block__info-card {
-  display: none;
-  position: absolute;
+  display: block;
+  position: relative;
+  bottom: 1.875rem;
   z-index: 10;
-  bottom: 1.25rem;
   left: 5%;
   width: 90%;
   background-color: #fff;
@@ -788,16 +788,17 @@ h6 {
   -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
   box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
 }
-@media (max-width: 47.99875em) {
+@media (any-hover) {
   .gallery-block__info-card {
-    display: block;
-    position: relative;
-    bottom: 1.875rem;
+    display: none;
+    position: absolute;
+    bottom: 1.25rem;
   }
 }
 
 .info-card {
-  padding: 1.4375rem 1.6875rem;
+  padding-right: 1.6875rem;
+  padding-left: 1.6875rem;
 }
 @supports (padding-top: clamp( 0.625rem , 0.3328651685rem  +  1.4606741573vw , 1.4375rem )) {
   .info-card {
